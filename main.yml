@@ -2,5 +2,5 @@
 - hosts: all
   become: true
   roles:
-    - { role: cis_rhel8, when: ansible_facts['ansible_distribution'] == 'Red Hat' and ansible_facts['ansible_distribution_major_version'] == '8' }
-    - { role: cis_rhel9, when: ansible_facts['ansible_distribution'] == 'RedHat' and ansible_facts['ansible_distribution_major_version'] == '9' }
+    - { role: cis_rhel8, when: ansible_facts['ansible_distribution'] == "Red Hat" and ansible_facts['ansible_distribution_major_version'] == '8' }
+    - { role: cis_rhel9, when: ansible_facts['ansible_distribution'] == "RedHat" and ansible_facts['ansible_distribution_major_version'] == '9' }
