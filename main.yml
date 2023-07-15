@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - { role: cis_rhel8, when: ansible_distribution == 'Red hat' and ansible_distribution_version == '8' }
+    - { role: cis_rhel9, when: ansible_distribution == 'Red hat' and ansible_distribution_version == '9' }
