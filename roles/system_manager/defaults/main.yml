@@ -1,0 +1,8 @@
+---
+# possible values:
+# - true
+# - false
+# default value: false
+# notes:
+# * set value to true when you want to update installed version
+ssm_update: false
